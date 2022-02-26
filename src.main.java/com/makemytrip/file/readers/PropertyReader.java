@@ -41,7 +41,7 @@ public class PropertyReader implements IReader {
 		}
 	}
 
-	private String getProperty(String propertyKey) {
+	public static String getProperty(String propertyKey) {
 		return properties.getProperty(propertyKey);
 	}
 

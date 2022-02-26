@@ -18,8 +18,7 @@ public class ChromeManager implements IBrowserManager {
 		ChromeOptions options = new ChromeOptions();
 		Map<String, Object> preferences = new HashMap<>();
 		preferences.put("download.prompt_for_download", false);
-		preferences.put("download.default_directory",
-				"/Users/user/eclipse-workspace/automationbootcamp2/target/test-classes/automationbootcampproject/");
+		preferences.put("download.default_directory", "/Users/user/eclipse-workspace/automationbootcampproject");
 		options.setExperimentalOption("prefs", preferences);
 
 		WebDriver driver = new ChromeDriver(options);

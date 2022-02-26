@@ -1,0 +1,15 @@
+[
+	{
+	
+	"cityName":"Mumbai",
+	"roomNumber":"2",
+	 "childrenRoom":2,
+	  "travel1":"Leisure",
+	  "travel2":"Work",
+	  "age1":"5",
+	  "age2":"7",
+	"childrensAge":[2,5]
+	
+	}
+
+]

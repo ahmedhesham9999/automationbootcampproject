@@ -2,6 +2,11 @@ package com.makemytrip.drivermanager;
 
 import org.openqa.selenium.WebDriver;
 
+import com.makemytrip.drivermanager.browsertypes.ChromeManager;
+import com.makemytrip.drivermanager.browsertypes.FirefoxManager;
+import com.makemytrip.drivermanager.browsertypes.SafariManager;
+import com.makemytrip.file.readers.PropertyReader;
+
 public class DriverFactory {
 
 	private static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();

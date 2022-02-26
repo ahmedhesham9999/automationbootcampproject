@@ -2,9 +2,13 @@ package com.makemytrip.pages;
 
 import java.time.Duration;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,10 +16,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.makemytrip.drivermanager.DriverFactory;
 
 public class BasePage {
-	WebDriver driver;
+	public WebDriver driver;
 
 	public BasePage() {
 		this.driver = DriverFactory.getDriverInstance();
+
+	}
+
+	public void clickAction(By element) {
+		Actions action = new Actions(driver);
+		WebElement webElement = driver.findElement(element);
+		action.moveToElement(webElement).click(webElement).build().perform();
+	}
+
+	public void keyActions(By element) {
+		Actions actions = new Actions(driver);
+		actions.keyDown(Keys.CONTROL);
+		actions.keyDown(Keys.ENTER);
+
 	}
 
 	protected void goToUrl(String url) {
@@ -36,9 +54,51 @@ public class BasePage {
 		select.selectByVisibleText(visibleText);
 	}
 
+	protected void moveToElement(By element) {
+		Actions action = new Actions(driver);
+		WebElement webElement = driver.findElement(element);
+		action.moveToElement(webElement).click(webElement).build().perform();
+
+	}
+
+	/*
+	 * protected void move(By element) { Actions action = new Actions(driver);
+	 * WebElement webElement = driver.findElement(element);
+	 * action.moveToElement(webElement).build().perform();
+	 * 
+	 * }
+	 */
+
+	public void select(By CITY_LIST, String text) {
+		Select select = new Select((WebElement) CITY_LIST);
+		select.selectByVisibleText(text);
+
+	}
+
+	protected void assertTrue(String actualText, String expectedText) {
+		Assert.assertEquals(actualText, expectedText);
+		// Assert.assertTrue(actualText.equals(expectedText));
+
+	}
+
+	protected void assertResult(String actualResult, String expectedResult) {
+		Assert.assertTrue(actualResult.equals(expectedResult));
+	}
+
 	private WebElement getElement(By by) {
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10), Duration.ofMillis(200));
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+	}
+
+	protected void waitForPageLoad() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("return document.readyState").equals("completed");
+	}
+
+	public void go(By element) {
+		driver.findElement(element).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(element).click();
 	}
 
 }

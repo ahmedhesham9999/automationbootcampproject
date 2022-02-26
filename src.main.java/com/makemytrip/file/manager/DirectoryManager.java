@@ -6,6 +6,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class DirectoryManager {
+
 	private static final Logger logger = LogManager.getLogger(DirectoryManager.class);
 
 	public static void cleanDirectory(String... directoryNames) {
@@ -16,11 +17,6 @@ public class DirectoryManager {
 		}
 	}
 
-	/**
-	 * Recursively delete all directory and files present in output folder
-	 *
-	 * @param outputDir directory object
-	 */
 	private static void removeFiles(File outputDir) {
 		File[] files = outputDir.listFiles();
 		if (files != null) {
@@ -35,4 +31,5 @@ public class DirectoryManager {
 		}
 		outputDir.delete();
 	}
+
 }
