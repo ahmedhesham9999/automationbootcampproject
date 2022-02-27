@@ -17,6 +17,7 @@ public interface IHotelPage {
 	By USERRATING = By.xpath("//div[@id='USER_RATING']/ul/li[2]");
 	By HOTELNAME = By.xpath("//p[@id='hlistpg_hotel_name']/span[1]");
 	By ROOMS_BUTTON = By.xpath("//a[@class='navLink']");
+	By SELECTROOM_BUTTON = By.xpath("//a[@data-testid='990000949601:MSE:1120:MSE:INGO-selectRoom']");
 
 	void enterMinPriceFilterValue(String minPrice);
 
@@ -31,4 +32,6 @@ public interface IHotelPage {
 	void captureHotelName(String hotelnumber);
 
 	void openRooms();
+
+	void selectRooms();
 }

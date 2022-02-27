@@ -119,7 +119,7 @@ public class BasePage {
 	public void scrollDown() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		js.executeScript("window.scrollBy(0,2000)", "");
+		js.executeScript("window.scrollBy(0,1700)", "");
 
 	}
 }

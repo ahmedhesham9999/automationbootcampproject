@@ -4,10 +4,14 @@ import org.testng.annotations.Test;
 
 import com.makemytrip.bo.SearchBO;
 import com.makemytrip.pages.Home.HomePage;
-import com.makemytrip.pages.Hotel.HotelPage;
 import com.makemytrip.pages.Search.SearchPage;
 
 import automationbootcampproject.com.makemytrip.dataproviders.SearchDataProvider;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 
 public class SearchTest extends BaseTest {
 
@@ -38,7 +42,11 @@ public class SearchTest extends BaseTest {
 	 */
 
 	@Test(dataProvider = "getSearchData", dataProviderClass = SearchDataProvider.class)
-	public void SearchWithDataProvider(SearchBO searchBO) {
+	@Epic("Search Creation")
+	@Story("Search Icon")
+	@Feature("Show Hotels available")
+	@Severity(SeverityLevel.NORMAL)
+	public void SearchWithDataProvider(SearchBO searchBO) throws InterruptedException {
 		HomePage home = new HomePage();
 		home.launch("https://www.makemytrip.com/");
 		home.clickAction();
@@ -59,23 +67,24 @@ public class SearchTest extends BaseTest {
 		search.selectChildAge1("5");
 		search.selectChildAge2("7");
 		search.clickApply();
-		search.selectTravelFor("Leisure");
-
-		HotelPage hotel = new HotelPage();
+		search.selectTravelFor(searchBO.getTravel1());
+		// search.selectTravelFor("Leisure");
 
 		/*
+		 * HotelPage hotel = new HotelPage();
+		 * 
+		 * 
 		 * hotel.validate_CityName("Mumbai, Maharashtra,...");
 		 * hotel.validate_CheckinDate("Sun, 27 Feb 2022");
 		 * hotel.validate_CheckoutDate("Thu, 3 Mar 2022");
+		 * 
+		 * hotel.enterMinPriceFilterValue(searchBO.getMinPrice());
+		 * hotel.enterMaxPriceFilterValue(searchBO.getMaxPrice());
+		 * hotel.clickOnApplyPriceFilter(); // hotel.userRating();
+		 * hotel.chooseHotel(searchBO.getHotel());
+		 * hotel.captureHotelName(searchBO.getHotelnumber()); hotel.openRooms();
+		 * hotel.selectRooms();
 		 */
-		hotel.enterMinPriceFilterValue(searchBO.getMinPrice());
-		hotel.enterMaxPriceFilterValue(searchBO.getMaxPrice());
-		hotel.clickOnApplyPriceFilter();
-		// hotel.userRating();
-		hotel.chooseHotel(searchBO.getHotel());
-		hotel.captureHotelName(searchBO.getHotelnumber());
-		hotel.openRooms();
-
 	}
 
 }

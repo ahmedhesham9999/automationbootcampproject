@@ -1,17 +1,17 @@
 [
 	{
 	
-	"cityName":"Mumbai",
+	"cityName":"Hotel Orient Regency",
 	"roomNumber":"2",
 	 "childrenRoom":"3",
 	  "travel1":"Leisure",
 	  "travel2":"Work",
 	  "age1":"5",
 	  "age2":"7",
-	"minPrice":"2500",
-	"maxPrice":"3000",
-	"hotel":"5",
-	"hotelnumber":"5"
+	"minPrice":"3937",
+	"maxPrice":"5000",
+	"hotel":"0",
+	"hotelnumber":"0"
 	
 	}
 

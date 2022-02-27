@@ -44,6 +44,7 @@ public class JsonReader implements IReader {
 			search.setCityName(getDataFromObject(jsonObject, "cityName"));
 			search.setRoomNumber(getDataFromObject(jsonObject, "roomNumber"));
 			search.setChildrenRoom(getDataFromObject(jsonObject, "childrenRoom"));
+			search.setTravel1(getDataFromObject(jsonObject, "travel1"));
 			search.setMinPrice(getDataFromObject(jsonObject, "minPrice"));
 			search.setMaxPrice(getDataFromObject(jsonObject, "maxPrice"));
 			search.setHotel(getDataFromObject(jsonObject, "hotel"));

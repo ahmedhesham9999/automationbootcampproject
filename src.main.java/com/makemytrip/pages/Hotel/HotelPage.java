@@ -104,8 +104,8 @@ public class HotelPage extends BasePage implements IHotelPage {
 		// TODO Auto-generated method stub
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		windowHandle();
-		scrollDown();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("ROOMS_BUTTON")));
+		// scrollDown();
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("ROOMS_BUTTON")));
 
 		/*
 		 * Actions actions = new Actions(driver);
@@ -114,6 +114,17 @@ public class HotelPage extends BasePage implements IHotelPage {
 		 */
 		// click(ROOMS_BUTTON);
 
+	}
+
+	@Override
+	public void selectRooms() {
+		// TODO Auto-generated method stub
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("SELECTROOM_BUTTON")));
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//span[@class='bookNowBtn ']/a']")));
+		action.click().build().perform();
+		// click(SELECTROOM_BUTTON);
 	}
 
 }

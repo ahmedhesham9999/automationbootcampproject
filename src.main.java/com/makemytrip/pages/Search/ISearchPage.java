@@ -14,10 +14,10 @@ public interface ISearchPage {
 	 */
 	By list = By.xpath("//ul[@class='react-autosuggest__suggestions-list']");
 	// By CHECKIN = By.xpath("//input[@id = 'checkin']");
-	By CHECKIN_DATE = By.xpath("//div[@aria-label='Sun Feb 27 2022']");
+	By CHECKIN_DATE = By.xpath("//div[@aria-label='Mon Feb 28 2022']");
 	By CHECKOUT_DATE = By.xpath("//div[@aria-label=\"Thu Mar 03 2022\"]");
 
-	By LIST_NAME = By.xpath("//p[contains(text(),'Mumbai, Maharashtra, India')]");
+	By LIST_NAME = By.xpath("//p[contains(text(),'Hotel Orient Regency, Mumbai, Maharashtra')]");
 
 	By CHECKOUT = By.xpath("//input[@id = 'checkout']");
 	By GUESTROOMS = By.xpath(" //label[@for='guest']");
@@ -61,8 +61,6 @@ public interface ISearchPage {
 	void clickApply();
 
 	void selectTravelFor(String text);
-
-	void childAge();
 
 	void select_text();
 

@@ -5,6 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class CustomListener implements ITestListener {
+
 	public void onTestStart(ITestResult result) {
 		String tcName = result.getMethod().getMethodName();
 		MDC.put("testCaseName", tcName);
