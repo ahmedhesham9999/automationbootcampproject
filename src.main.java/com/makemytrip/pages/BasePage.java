@@ -1,6 +1,7 @@
 package com.makemytrip.pages;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -94,6 +95,8 @@ public class BasePage {
 	protected void waitForPageLoad() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("return document.readyState").equals("completed");
+		/* js.executeScript("arguments[0].scrollIntoView(true)", element); */
+
 	}
 
 	public void go(By element) {
@@ -101,4 +104,22 @@ public class BasePage {
 		driver.findElement(element).click();
 	}
 
+	public void windowHandle() {
+		String parentWindow = driver.getWindowHandle();
+		Set<String> allWindows = driver.getWindowHandles();
+		for (String w : allWindows) {
+			if (w != parentWindow) {
+				driver.switchTo().window(w);
+			}
+
+		}
+
+	}
+
+	public void scrollDown() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		js.executeScript("window.scrollBy(0,2000)", "");
+
+	}
 }

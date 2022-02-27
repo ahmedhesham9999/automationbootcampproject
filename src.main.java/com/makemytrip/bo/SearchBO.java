@@ -17,7 +17,7 @@ public class SearchBO {
 
 	@Getter
 	@Setter
-	int childrenRoom;
+	String childrenRoom;
 
 	@Getter
 	@Setter
@@ -32,6 +32,18 @@ public class SearchBO {
 	@Getter
 	@Setter
 	String age2;
+	@Getter
+	@Setter
+	String minPrice;
+	@Getter
+	@Setter
+	String maxPrice;
+	@Getter
+	@Setter
+	String hotel;
+	@Getter
+	@Setter
+	String hotelnumber;
 
 	/*
 	 * public void setCheckinDate(String checkindate) { this.checkindate =

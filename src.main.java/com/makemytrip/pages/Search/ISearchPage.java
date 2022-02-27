@@ -52,7 +52,7 @@ public interface ISearchPage {
 
 	void openGuestRoomNumber(String number);
 
-	void childrenNumber(int roomNumber);
+	void childrenNumber(String roomNumber);
 
 	void selectChildAge1(String age);
 

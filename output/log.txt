@@ -1,1 +1,0 @@
-[15:12:37.296] WARN   com.makemytrip.file.manager.DirectoryManager.cleanDirectory(DirectoryManager.java:13)                                              - Deleting existing directory and files.

@@ -62,13 +62,19 @@ public class SearchTest extends BaseTest {
 		search.selectTravelFor("Leisure");
 
 		HotelPage hotel = new HotelPage();
-		hotel.applyPriceFilter();
 
-		hotel.validate_CityName("Mumbai, Maharashtra,...");
-		hotel.validate_CheckinDate("Sun, 27 Feb 2022");
-		hotel.validate_CheckoutDate("Thu, 3 Mar 2022");
-
-		hotel.applyPriceFilter();
+		/*
+		 * hotel.validate_CityName("Mumbai, Maharashtra,...");
+		 * hotel.validate_CheckinDate("Sun, 27 Feb 2022");
+		 * hotel.validate_CheckoutDate("Thu, 3 Mar 2022");
+		 */
+		hotel.enterMinPriceFilterValue(searchBO.getMinPrice());
+		hotel.enterMaxPriceFilterValue(searchBO.getMaxPrice());
+		hotel.clickOnApplyPriceFilter();
+		// hotel.userRating();
+		hotel.chooseHotel(searchBO.getHotel());
+		hotel.captureHotelName(searchBO.getHotelnumber());
+		hotel.openRooms();
 
 	}
 

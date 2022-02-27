@@ -62,7 +62,7 @@ public class SearchPage extends BasePage implements ISearchPage {
 	 * // click(ROOM); }
 	 */
 	@Override
-	public void childrenNumber(int roomNumber) {
+	public void childrenNumber(String roomNumber) {
 		// TODO Auto-generated method stub
 		click(By.xpath("//ul[@class=\"guestCounter font12 darkText\"][2]/li[" + roomNumber + "]"));
 	}
