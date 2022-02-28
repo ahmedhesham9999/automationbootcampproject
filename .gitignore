@@ -1,5 +1,2 @@
 test-output/**
 target/*
-output/*
-allure-results/**
-allure-reports/**
