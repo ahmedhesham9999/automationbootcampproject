@@ -14,6 +14,7 @@
 ## Issues I faced during the project
  * The filter part filtering the two areas togteher sometimes doesnt work so I commented one of them also I tried to add wait but was not of help
  * Everytime the hotel test case is executed there are different hotels so I was not able to build a logic to add rooms as every time the locator differs so I was not able to        proceed with the flow.
+ * Waiting for the hotels list container to load sometimes fails didnt get why so the whole test fails.
  
  
 
