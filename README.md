@@ -6,6 +6,7 @@
 ##### 1- Home Page Test case to open the browser
 ####  2- Search Page Test case to search for hotel , add dates , choose rooms and travel for reason
 ####  3- Hotel Page Test case to Hotel , apply price  filters , ratings ,click on 5th  Hotel and capture hotel name
+### 4- Reporting and Logging
 
 ## How To run the project
 * Supposed to be from pom.xml but for some reason it's not working with me
