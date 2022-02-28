@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: SELECTROOM_BUTTON (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '4.1.1', revision: 'e8fcc2cecf'\nSystem info: host: 'DESKTOP-7C8VEP8', ip: '192.168.206.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\user\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52593/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e1bef29b5eaecafcc5f91755068385ea",
+      "children" : [ {
+        "name" : "SearchWithDataProvider",
+        "uid" : "b63f1b71647a390a",
+        "parentUid" : "be7ae819022a973747be00637b14d787",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646011034493,
+          "stop" : 1646011048198,
+          "duration" : 13705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+      } ],
+      "uid" : "be7ae819022a973747be00637b14d787"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

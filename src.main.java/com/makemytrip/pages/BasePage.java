@@ -23,6 +23,7 @@ public class BasePage {
 		this.driver = DriverFactory.getDriverInstance();
 
 	}
+	/* a function using actions to a click on element */
 
 	public void clickAction(By element) {
 		Actions action = new Actions(driver);
@@ -30,6 +31,7 @@ public class BasePage {
 		action.moveToElement(webElement).click(webElement).build().perform();
 	}
 
+	/* Function to use key down using actions */
 	public void keyActions(By element) {
 		Actions actions = new Actions(driver);
 		actions.keyDown(Keys.CONTROL);
@@ -37,10 +39,12 @@ public class BasePage {
 
 	}
 
+	/* function to open the website by passing the url */
 	protected void goToUrl(String url) {
 		driver.get(url);
 	}
 
+	/* function used to write instead of sendKeys() */
 	protected void fillText(By by, String text) {
 		getElement(by).sendKeys(text);
 	}
@@ -86,6 +90,12 @@ public class BasePage {
 		Assert.assertTrue(actualResult.equals(expectedResult));
 	}
 
+	/***
+	 * Wait for the element to be visible using the locator
+	 * 
+	 * @param locator, Locator used to check if the element is visible or not
+	 * @return returns a webElement to perform an action on
+	 */
 	private WebElement getElement(By by) {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10), Duration.ofMillis(200));

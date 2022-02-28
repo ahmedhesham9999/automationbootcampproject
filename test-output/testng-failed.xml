@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DemoTest(failed)">
     <classes>
       <class name="automationbootcampproject.com.makemytrip.pages.HotelTest">
         <methods>
           <include name="SearchWithDataProvider" invocation-numbers="0"/>
         </methods>
       </class> <!-- automationbootcampproject.com.makemytrip.pages.HotelTest -->
-      <class name="automationbootcampproject.com.makemytrip.pages.SearchTest">
-        <methods>
-          <include name="setPrerequisite"/>
-          <include name="launchBrowser"/>
-          <include name="SearchWithDataProvider" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- automationbootcampproject.com.makemytrip.pages.SearchTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- DemoTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

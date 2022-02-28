@@ -1,0 +1,51 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "automationbootcampproject.com.makemytrip.pages",
+    "children" : [ {
+      "name" : "SearchTest",
+      "children" : [ {
+        "name" : "SearchWithDataProvider",
+        "uid" : "4cc3d2aef24a0b3c",
+        "parentUid" : "62caab9b46af71bd9e0a19718a3869dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646011022897,
+          "stop" : 1646011034481,
+          "duration" : 11584
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+      } ],
+      "uid" : "62caab9b46af71bd9e0a19718a3869dc"
+    }, {
+      "name" : "HotelTest",
+      "children" : [ {
+        "name" : "SearchWithDataProvider",
+        "uid" : "b63f1b71647a390a",
+        "parentUid" : "398dcfcc656e7ca552260ef3a99c4453",
+        "status" : "broken",
+        "time" : {
+          "start" : 1646011034493,
+          "stop" : 1646011048198,
+          "duration" : 13705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+      } ],
+      "uid" : "398dcfcc656e7ca552260ef3a99c4453"
+    } ],
+    "uid" : "automationbootcampproject.com.makemytrip.pages"
+  } ]
+}

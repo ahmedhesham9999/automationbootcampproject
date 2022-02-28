@@ -1,0 +1,55 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestSuite",
+    "children" : [ {
+      "name" : "DemoTest",
+      "children" : [ {
+        "name" : "automationbootcampproject.com.makemytrip.pages.SearchTest",
+        "children" : [ {
+          "name" : "SearchWithDataProvider",
+          "uid" : "4cc3d2aef24a0b3c",
+          "parentUid" : "a13e3b3a9fdb472b0fc03dcc3690d135",
+          "status" : "passed",
+          "time" : {
+            "start" : 1646011022897,
+            "stop" : 1646011034481,
+            "duration" : 11584
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+        } ],
+        "uid" : "a13e3b3a9fdb472b0fc03dcc3690d135"
+      }, {
+        "name" : "automationbootcampproject.com.makemytrip.pages.HotelTest",
+        "children" : [ {
+          "name" : "SearchWithDataProvider",
+          "uid" : "b63f1b71647a390a",
+          "parentUid" : "6d8436837ec6f14083f028b1c2ce1b69",
+          "status" : "broken",
+          "time" : {
+            "start" : 1646011034493,
+            "stop" : 1646011048198,
+            "duration" : 13705
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+        } ],
+        "uid" : "6d8436837ec6f14083f028b1c2ce1b69"
+      } ],
+      "uid" : "c25b54e98351595f07ec9d98df64e5d3"
+    } ],
+    "uid" : "4f26dde5cd0b5e43ba4287be426a0f93"
+  } ]
+}

@@ -1,0 +1,21 @@
+[ {
+  "uid" : "b63f1b71647a390a",
+  "name" : "SearchWithDataProvider",
+  "time" : {
+    "start" : 1646011034493,
+    "stop" : 1646011048198,
+    "duration" : 13705
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4cc3d2aef24a0b3c",
+  "name" : "SearchWithDataProvider",
+  "time" : {
+    "start" : 1646011022897,
+    "stop" : 1646011034481,
+    "duration" : 11584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

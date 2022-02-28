@@ -1,0 +1,113 @@
+{
+  "uid" : "4cc3d2aef24a0b3c",
+  "name" : "SearchWithDataProvider",
+  "fullName" : "automationbootcampproject.com.makemytrip.pages.SearchTest.SearchWithDataProvider",
+  "historyId" : "c76c958ee4ee778479eeae9b6974fcbc",
+  "time" : {
+    "start" : 1646011022897,
+    "stop" : 1646011034481,
+    "duration" : 11584
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setPrerequisite",
+    "time" : {
+      "start" : 1646011019587,
+      "stop" : 1646011019678,
+      "duration" : 91
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "launchBrowser",
+    "time" : {
+      "start" : 1646011019704,
+      "stop" : 1646011022714,
+      "duration" : 3010
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "automationbootcampproject.com.makemytrip.pages.SearchTest"
+  }, {
+    "name" : "testClass",
+    "value" : "automationbootcampproject.com.makemytrip.pages.SearchTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "SearchWithDataProvider"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestSuite"
+  }, {
+    "name" : "suite",
+    "value" : "DemoTest"
+  }, {
+    "name" : "subSuite",
+    "value" : "automationbootcampproject.com.makemytrip.pages.SearchTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7C8VEP8"
+  }, {
+    "name" : "thread",
+    "value" : "18384@DESKTOP-7C8VEP8.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Show Hotels available"
+  }, {
+    "name" : "story",
+    "value" : "Search Icon"
+  }, {
+    "name" : "epic",
+    "value" : "Search Creation"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4cc3d2aef24a0b3c.json",
+  "parameterValues" : [ "SearchBO(cityName=Hotel Orient Regency, roomNumber=2, childrenRoom=3, travel1=Leisure, travel2=null, age1=null, age2=null, minPrice=3937, maxPrice=5000, hotel=0, hotelnumber=0)" ]
+}
