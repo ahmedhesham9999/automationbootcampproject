@@ -1,7 +1,7 @@
 # automationbootcampproject 
 ## Final project in Selenium Automation Bootcamp Batch 3
 
-### * This project contains the flow for reserving an hotel from "MakeMyTrip" website.
+ * This project contains the flow for reserving an hotel from "MakeMyTrip" website.
 ### . What I have implemented (it is uncompleted project):
 ##### 1- Home Page Test case to open the browser
 ####  2- Search Page Test case to search for hotel , add dates , choose rooms and travel for reason
